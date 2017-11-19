@@ -12,15 +12,15 @@ function setup() {
   frameRate(2);}
 
 function keyPressed() {
-  //87 is W, for restart & refill canvas with a new color
+  //82 is R, refill canvas with a new color
   //83 is S, for save canvas
-  //80 is P, for pause; 82 is R, for run 
-  if (keyCode === 87) 
+  //80 is P, for pause; 85 is U, for unpause
+  if (keyCode === 82) 
   {background(random(0, 255), random(0, 40), random(230, 255)) 
   {loop()}}
   if (keyCode === 83) {saveCanvas("artwork", "png");}
   if (keyCode === 80) {noLoop();}
-  if (keyCode === 82) {loop();}}
+  if (keyCode === 85) {loop();}}
 
 function draw() {
   image(img, 0, 0, prop, windowHeight);
