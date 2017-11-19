@@ -9,8 +9,6 @@
   <li><b>P</b> — pause</li>
   <li><b>U</b> — unpause</li>
   <li><b>S</b> — save</li>
-</ul>  
-
-***
+</ul>
 
 # <a href="https://rhizomicmaze.github.io/p21/suprematicalgorithms/" target="_blank"><b>BEGIN PROCESS</b></a>
