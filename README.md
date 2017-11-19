@@ -3,7 +3,7 @@
   
 ***
 
-##Controls:
+## Controls:
  <ul style="list-style-type:disc">
     <li><b>Ctrl+R</b> — restart program</li>
     <li><b>R</b> — refill canvas with a new color</li>
@@ -12,8 +12,6 @@
     <li><b>S</b> — save</li>
   </ul>  
 
-#[BEGIN PROCESS](https://rhizomicmaze.github.io/p21/suprematicalgorithms/)
-
-***
+# [BEGIN PROCESS](https://rhizomicmaze.github.io/p21/suprematicalgorithms/)
 
 [https://t.me/Processist]
