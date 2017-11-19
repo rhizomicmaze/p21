@@ -3,6 +3,8 @@
 
 ***
 
+# <a href="https://rhizomicmaze.github.io/p21/suprematicalgorithms/" target="_blank"><b>BEGIN PROCESS</b></a>
+
 <ul style="list-style-type:none">
   <li><b>CLTR+R</b> — Restart Program</li>
   <li><b>R</b> — refill canvas with a new color</li>
@@ -10,5 +12,3 @@
   <li><b>U</b> — unpause</li>
   <li><b>S</b> — save</li>
 </ul>
-
-# <a href="https://rhizomicmaze.github.io/p21/suprematicalgorithms/" target="_blank"><b>BEGIN PROCESS</b></a>
