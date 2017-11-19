@@ -11,11 +11,16 @@ Controls:
 
 <dl>
   <dt>Controls:</dt>
-  <dd><b>Ctrl+R</b> — restart program</dd>
-  <dd><b>R</b> — refill canvas with a new color</dd>
-  <dd><b>P</b> — pause</dd>
-  <dd><b>U</b> — unpause</dd>
-  <dd><b>S</b> — save</dd>
+  <dd><b>Ctrl+R</b> — restart program
+  
+  <b>R</b> — refill canvas with a new color
+  
+  <b>P</b> — pause
+  
+  <b>U</b> — unpause
+  
+  <b>S</b> — save</dd>
+  
 </dl>
 
 # [BEGIN PROCESS](https://rhizomicmaze.github.io/p21/suprematicalgorithms/)
