@@ -10,8 +10,7 @@ CONTROLS:
   <li><b>S</b> — save</li>
 </ul>  
 
-<a href="https://rhizomicmaze.github.io/p21/suprematicalgorithms/" target="_blank"><b>BEGIN PROCESS</b></a>
-
+<a href="https://rhizomicmaze.github.io/p21/suprematicalgorithms/" target="_blank"><h1><b>BEGIN PROCESS</b></h1></a>
 <hr>
 
 https://t.me/Processist
