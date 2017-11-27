@@ -1,39 +1,61 @@
-var es, prop, img, w, h;
-function preload(){img = loadImage("https://dl.dropboxusercontent.com/s/hmz8y0y6xzhn3t3/p21_1200px.png");}
+var es, prop, r, frm, bg, bio, loading;
+var img = [];
+
+function preload() {
+	loading = createImg('loading.gif').position(300, 400);
+	bio = loadSound("https://dl.dropboxusercontent.com/s/ilocrkca2kytl1q/malevich.mp3");
+	bio.setVolume(0.5);
+	img[0] = "https://dl.dropboxusercontent.com/s/qel7iq9d2qn1v3i/p21_frame_square_618px.png";
+	img[1] = "https://dl.dropboxusercontent.com/s/ggax2ju59l7sunl/p21_frame_rect_618px.png";
+	r = floor(random(0, img.length));
+	frm = loadImage(img[r]);
+}
 
 function setup() {
-  w = img.width;
-	h = img.height;
-  prop = (w/(h/windowHeight));
-  
-  createCanvas(prop, windowHeight+(windowHeight/100));
-  colorMode(HSB);
-  background(random(0, 255), random(0, 40), random(230, 255));
-  frameRate(2);}
+	loading.hide();
+	createCanvas(618, 705);
+	colorMode(HSB);
+	background(random(0, 255), random(0, 40), random(230, 255));
+	frameRate(3);
+}
 
 function keyPressed() {
-  //82 is R, refill canvas with a new color
-  //83 is S, for save canvas
-  //80 is P, for pause; 85 is U, for unpause
-  if (keyCode === 82) 
-  {background(random(0, 255), random(0, 40), random(230, 255)) 
-  {loop()}}
-  if (keyCode === 83) {saveCanvas("artwork", "png");}
-  if (keyCode === 80) {noLoop();}
-  if (keyCode === 85) {loop();}}
+	if (keyCode === 82) {
+		background(random(0, 255), random(0, 40), random(230, 255));
+		loop();
+		preload();
+	} //RESTART (R)
+	if (keyCode === 83) {
+		saveCanvas("process", "png");
+	} //SAVE (S)
+	if (keyCode === 80) {
+		noLoop();
+	} //PAUSE (P)
+	if (keyCode === 85) {
+		loop();
+	} //UNPAUSE (U)
+	
+	if (keyCode === 66 && bio.isPlaying()) {
+	    bio.stop();
+	  } else {
+	    bio.play();
+	 } //BIO (B)
+}
+
 
 function draw() {
-  image(img, 0, 0, prop, windowHeight);
-  noStroke();
-  es = random(100, 300);
-
-  if (mouseIsPressed) {
-    fill(random(0, 255), random(30, 80), random(40, 110));
-    rect(mouseX, mouseY, random(0, 80), random(40, 100), 10);
-    ellipse(pmouseX, random(0, height), es, es);
-    push();
-    translate(30, 50)
-    strokeWeight(1)
-    stroke(random(0, 255), random(30, 80), 100)
-    line(random(0, width), random(0, height), pmouseX, pmouseY);
-    pop();}}
+	image(frm, 0, 0);
+	es = random(100, 350);
+	noStroke();
+	if (mouseIsPressed) {
+		fill(random(0, 255), random(30, 80), random(40, 110));
+		rect(mouseX, mouseY, random(0, 80), random(40, 100), 10);
+		ellipse(pmouseX, random(0, height), es, es);
+		push();
+		translate(30, 50)
+		strokeWeight(1)
+		stroke(random(0, 255), random(30, 80), 100)
+		line(random(0, width), random(0, height), pmouseX, pmouseY);
+		pop();
+	}
+}
