@@ -4,7 +4,6 @@ var img = [];
 function preload() {
 	loading = createImg('loading.gif').position(70, 110);
 	bio = loadSound("https://dl.dropboxusercontent.com/s/ilocrkca2kytl1q/malevich.mp3");
-	bio.setVolume(0.5);
 	img[0] = "https://dl.dropboxusercontent.com/s/qel7iq9d2qn1v3i/p21_frame_square_618px.png";
 	img[1] = "https://dl.dropboxusercontent.com/s/ggax2ju59l7sunl/p21_frame_rect_618px.png";
 	r = floor(random(0, img.length));
@@ -17,6 +16,8 @@ function setup() {
 	colorMode(HSB);
 	background(random(0, 255), random(0, 40), random(230, 255));
 	frameRate(3);
+	bio.playMode('restart');
+	bio.setVolume(0.5);
 }
 
 function keyPressed() {
