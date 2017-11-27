@@ -16,8 +16,8 @@ function setup() {
 	colorMode(HSB);
 	background(random(0, 255), random(0, 40), random(230, 255));
 	frameRate(3);
-	bio.playMode('restart');
 	bio.setVolume(0.5);
+	bio.playMode('restart');
 }
 
 function keyPressed() {
@@ -34,11 +34,9 @@ function keyPressed() {
 	if (keyCode === 85) {
 		loop();
 	} //UNPAUSE (U)
-	
-	if (keyCode === 66 && bio.isPlaying()) {
-	    bio.stop();
-	  } else {
-	    bio.play();
+
+	if (keyCode === 66) {
+	  bio.play();
 	 } //BIO (B)
 }
 
