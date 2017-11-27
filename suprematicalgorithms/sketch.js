@@ -2,7 +2,7 @@ var es, prop, r, frm, bg, bio, loading;
 var img = [];
 
 function preload() {
-	loading = createImg('loading.gif').position(300, 400);
+	loading = createImg('loading.gif').position(70, 110);
 	bio = loadSound("https://dl.dropboxusercontent.com/s/ilocrkca2kytl1q/malevich.mp3");
 	bio.setVolume(0.5);
 	img[0] = "https://dl.dropboxusercontent.com/s/qel7iq9d2qn1v3i/p21_frame_square_618px.png";
@@ -23,7 +23,6 @@ function keyPressed() {
 	if (keyCode === 82) {
 		background(random(0, 255), random(0, 40), random(230, 255));
 		loop();
-		preload();
 	} //RESTART (R)
 	if (keyCode === 83) {
 		saveCanvas("process", "png");
